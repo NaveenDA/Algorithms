@@ -13,6 +13,7 @@ This repository contains the implementation of datastructures and algorithms in 
 
 ## Data Structures
 1. [Stacks](/src/data-structures/stacks/stacks.ts)
+2. [Queues](/src/data-structures/queues/queues.ts)
 
 ## Algorithms
 

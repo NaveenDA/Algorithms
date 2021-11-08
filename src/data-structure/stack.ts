@@ -2,8 +2,8 @@
  * Stack is a linear data structure which follows LIFO (Last In First Out)
  */
 
-class Stack {
-  private arr: any[] = [];
+class Stack<T> {
+  private arr: T[] = [];
   private top: number = -1;
   private capacity: number = 0;
 
@@ -19,7 +19,7 @@ class Stack {
    * Push an element to the top of the stack
    * @param element Element to be pushed
    */
-  public push(item: any) {
+  public push(item: T):void {
     if (this.isFull()) {
       throw new Error("Stack is full");
     }
@@ -28,9 +28,9 @@ class Stack {
 
   /**
    * Pop an element from the top of the stack
-   * @returns {any} Element popped from the stack
+   * @returns  Element popped from the stack
    */
-  public pop() {
+  public pop():T {
     if (this.isEmpty()) {
       throw new Error("Stack is empty");
     }
@@ -38,9 +38,9 @@ class Stack {
   }
   /**
    * Peek the top element of the stack
-   * @returns {any} Top element of the stack
+   * @returns  Top element of the stack
    */
-  public peek() {
+  public peek():T {
     if (this.isEmpty()) {
       throw new Error("Stack is empty");
     }
@@ -51,7 +51,7 @@ class Stack {
    * To check the stack is empty or not
    * @returns {boolean} true if stack is full
    */
-  public isFull() {
+  public isFull():boolean {
     return this.top == this.capacity - 1;
   }
 
@@ -59,7 +59,7 @@ class Stack {
    * Check the stack is empty or not
    * @returns {boolean} true if stack is empty
    */
-  public isEmpty() {
+  public isEmpty():boolean {
     return this.top == -1;
   }
 }
