@@ -1,0 +1,12 @@
+{
+  "configurations": [
+    {
+      "name": "Launch index.ts",
+      "type": "node",
+      "args": ["${workspaceFolder}/src/index.ts"],
+      "runtimeArgs": ["-r", "ts-node/register"],
+      "request": "launch",
+      "skipFiles": ["<node_internals>/**"]
+    }
+  ]
+}
