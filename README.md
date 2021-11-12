@@ -15,6 +15,7 @@ This repository contains the implementation of datastructures and algorithms in 
 1. [Stacks](https://github.com/NaveenDA/Algorithms/blob/main/src/data-structure/stack.ts)
 2. [Queue](https://github.com/NaveenDA/Algorithms/blob/main/src/data-structure/queue.ts)
 3. [Circular Queue](https://github.com/NaveenDA/Algorithms/blob/main/src/data-structure/circular-queue.ts)
+4. [Priority Queue](https://github.com/NaveenDA/Algorithms/blob/main/src/data-structure/priority-queue.ts)
 
 ## Algorithms
 
